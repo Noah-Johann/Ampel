@@ -27,7 +27,15 @@ def traffic_light():
                 ROT.on()
                 GELB.off()
 
-
+                #Fußgängerampel
+                for __ in range(14):
+                    BLAU.on()
+                    sleep(0.5)
+                    BLAU.off()
+                    sleep(0.5)
+                
+                GELB.on()
+                sleep(2.5)
 
 
     finally:
