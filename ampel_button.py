@@ -45,9 +45,13 @@ def traffic_light():
                 GELB.on()
                 sleep(2.5)
 
-
+    except KeyboardInterrupt:
+        print ("Programm wird beendet.")
     finally:
         ROT.off()
         GELB.off()
         GRUEN.off()
         BLAU.off()
+
+if __name__ == "__main__":
+    traffic_light
